@@ -1,0 +1,7 @@
+# Deployment
+upload.sh
+
+# Go binaries
+srvr/bin
+srvr/pkg
+srvr/src/vendor/src
