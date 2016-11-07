@@ -6,13 +6,69 @@ html, body {
 }
 
 div#instruction {
-    font-family: "Lucida Console","Lucida Sans Typewriter",monaco,"Bitstream Vera Sans Mono",monospace
     height: 70%;
     margin-top: 10%;
+    width: 98%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div#toprow {
+    height: 48%;
     width: 100%;
-    text-align: center;
-    font-size: 60em;
-    color: #bcdf8a;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+div#botrow {
+    height: 48%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+div#toprow div, div#botrow div {
+    height: 100%;
+    width: 45%;
+}
+
+div#q1 {
+    border: 3px solid #f6f4f1;
+}
+
+div#q2 {
+    border-top: 3px solid #f6f4f1;
+    border-right: 3px solid #f6f4f1;
+    border-bottom: 3px solid #f6f4f1;
+}
+
+div#q3 {
+    border-right: 3px solid #f6f4f1;
+    border-bottom: 3px solid #f6f4f1;
+    border-left: 3px solid #f6f4f1;
+}
+
+div#q4 {
+    border-right: 3px solid #f6f4f1;
+    border-bottom: 3px solid #f6f4f1;
+}
+
+div#q1.target {
+    background-color: #ed7777;
+}
+
+div#q2.target {
+    background-color: #f5f9ad;
+}
+
+div#q3.target {
+    background-color: #bcdf8a;
+}
+
+div#q4.target {
+    background-color: #94c0cc;
 }
 
 div#controls {
